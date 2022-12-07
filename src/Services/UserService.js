@@ -26,11 +26,10 @@ export default class UserServices {
   }
 
   usuarioAutenticado () {
-    return localStorage.getItem("token") != undefined ? true : false
-    // return typeof localStorage.getItem("token")
+    return localStorage.getItem("token") !== undefined ? true : false
   }
 
-  //Desafio ---> implemente um botão que chama essa função dentro da página Home
+  //implementetar botão para logout
   async logout () {
     localStorage.removeItem("token")
     localStorage.removeItem("nome")
